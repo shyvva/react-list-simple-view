@@ -1,15 +1,5 @@
 import React from 'react';
-import styles from './Button.module.scss'
-
-//props.children pobiera elementy wewnątrz 
-//selektora do komponentu, dzięki temu można je wykorzystać
-// wykorzystuje go w Form.js podając komponent Button
-
-
-// Jeśli do naszego buttona został dodany props href wtedy mamy zwrócić link, a jeśli podany
-// nie zostanie href to musi nam wyjśc button
-// {href ? a : button }
-
+import styles from './Button.module.scss';
 
 const Button = ({ children, href }) => (
   <>
@@ -28,9 +18,8 @@ const Button = ({ children, href }) => (
             {children}
           </button>
         )
-
     }
   </>
 );
 
-export default Button
+export default Button;
