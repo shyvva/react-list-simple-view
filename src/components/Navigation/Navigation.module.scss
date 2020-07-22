@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navItem {
+    list-style: none;
+    //navigationItem nazwa klasy rodzica, a Link ma tylko dodany Link (navigationItemLink)
+    // poprzez & można się dostać do dziecka pisząc tylko dodany Link
+    &Link {
+        text-decoration: none;
+        color: #818181;
+
+        &Active {
+            font-weight: 700;
+        }
+    }
+}
