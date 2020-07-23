@@ -1,11 +1,9 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
 .navItem {
+    display: inline-block;
+    margin-right: 50px;
     list-style: none;
-    //navigationItem nazwa klasy rodzica, a Link ma tylko dodany Link (navigationItemLink)
+    //navigationItem nazwa klasy rodzica, a Link ma tylko dodany sufix Link (navigationItemLink)
     // poprzez & można się dostać do dziecka pisząc tylko dodany Link
     &Link {
         text-decoration: none;
